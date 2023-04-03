@@ -72,7 +72,8 @@ library
     build-depends:    base ^>=4.16.4.0,
                       some,
                       justified-containers,
-                      dependent-map
+                      dependent-map,
+                      roles
 
     -- Directories containing source files.
     hs-source-dirs:   src
