@@ -60,7 +60,7 @@ library
     import:           warnings
 
     -- Modules exported by the library.
-    exposed-modules:  MyLib
+    exposed-modules:  Data.Dependent.Map.Justified
 
     -- Modules included in this library but not exported.
     -- other-modules:
@@ -70,6 +70,7 @@ library
 
     -- Other library packages from which modules are imported.
     build-depends:    base ^>=4.16.4.0,
+                      some,
                       justified-containers,
                       dependent-map
 
@@ -104,6 +105,4 @@ test-suite justified-dependent-map-test
     -- Test dependencies.
     build-depends:
         base ^>=4.16.4.0,
-        justified-dependent-map,
-        justified-containers,
-        dependent-map
+        justified-dependent-map
